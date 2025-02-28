@@ -1,0 +1,3 @@
+- [ ] output filtering on TSV 12V (LDO, LC filter?)
+- [ ] Swap I2C for SPI
+- [ ] rest of circuit

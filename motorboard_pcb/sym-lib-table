@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "${KIPRJMOD}/lib/XIAO-RP2350/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
+  (lib (name "TCAN1042")(type "KiCad")(uri "${KIPRJMOD}/lib/TCAN1042HGVDQ1/KiCADv6/2025-02-28_02-57-04.kicad_sym")(options "")(descr ""))
+  (lib (name "ACT45B-101-2P-TL003")(type "KiCad")(uri "${KIPRJMOD}/lib/ACT45B_101_2P_TL003/ACT45B-101-2P-TL003.kicad_sym")(options "")(descr ""))
+  (lib (name "ISO1640")(type "KiCad")(uri "${KIPRJMOD}/lib/ISO1640BQDRQ1/KiCADv6/2025-02-28_20-22-48.kicad_sym")(options "")(descr ""))
+  (lib (name "LM5012")(type "KiCad")(uri "${KIPRJMOD}/lib/LM5012QDDARQ1/KiCADv6/2025-02-28_21-05-36.kicad_sym")(options "")(descr ""))
+  (lib (name "LQW15AN47NG00D")(type "KiCad")(uri "${KIPRJMOD}/lib/LQW15AN47NG00D/LQW15AN47NG00D.kicad_sym")(options "")(descr ""))
+)
