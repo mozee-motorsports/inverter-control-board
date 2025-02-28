@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "866b6a4b-62f6-4650-8b85-c0689870ad79")
+	(uuid "c5e326bb-5d78-47a1-be61-c46a33932be2")
 	(paper "A4")
 	(lib_symbols
 		(symbol "2025-02-28_21-05-36:LM5012QDDARQ1"
@@ -1634,6 +1634,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 48.26) (xy 162.56 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79dc4f17-40da-4e0c-a063-c247a282355a")
+	)
+	(wire
+		(pts
 			(xy 234.95 63.5) (xy 234.95 50.8)
 		)
 		(stroke
@@ -2823,7 +2833,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 162.56 48.26 90)
+		(at 165.1 48.26 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2832,7 +2842,7 @@
 		(fields_autoplaced yes)
 		(uuid "bca3f71b-bc55-44ee-b173-67a30ec4077d")
 		(property "Reference" "#PWR011"
-			(at 168.91 48.26 0)
+			(at 171.45 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2841,7 +2851,7 @@
 			)
 		)
 		(property "Value" "GND2"
-			(at 166.37 48.2599 90)
+			(at 168.91 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,7 +2860,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 48.26 0)
+			(at 165.1 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2859,7 +2869,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 48.26 0)
+			(at 165.1 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2868,7 +2878,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 162.56 48.26 0)
+			(at 165.1 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
