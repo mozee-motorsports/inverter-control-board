@@ -3483,12 +3483,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 41.91 21.59 0)
+		(property "Value" "+12VL"
+			(at 44.45 25.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4461,7 +4462,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4b54094-846d-4461-9b45-78665c4c7bd1")
 		(property "Reference" "#PWR02"
 			(at 209.55 41.91 0)
@@ -4472,12 +4472,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 209.55 33.02 0)
+		(property "Value" "+3.3VL"
+			(at 208.788 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4815,7 +4816,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bf62d022-40c3-408e-b1bf-2a9b19a51fbd")
 		(property "Reference" "#PWR04"
 			(at 203.2 41.91 0)
@@ -4826,12 +4826,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 203.2 33.02 0)
+		(property "Value" "+5VL"
+			(at 200.66 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""

@@ -8,5 +8,5 @@
   (lib (name "LQW15AN47NG00D")(type "KiCad")(uri "${KIPRJMOD}/lib/LQW15AN47NG00D")(options "")(descr ""))
   (lib (name "ISO7041")(type "KiCad")(uri "${KIPRJMOD}/lib/ISO7041FQDBQRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "DAC6551")(type "KiCad")(uri "${KIPRJMOD}/lib/DAC6551AQDGKRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
-  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV9361QDBVRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "TLV76701")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV76701DRVR/KiCADv6/footprints.pretty")(options "")(descr ""))
 )
