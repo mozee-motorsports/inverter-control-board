@@ -6,4 +6,7 @@
   (lib (name "ISO1640")(type "KiCad")(uri "${KIPRJMOD}/lib/ISO1640BQDRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "LM5201")(type "KiCad")(uri "${KIPRJMOD}/lib/LM5012QDDARQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "LQW15AN47NG00D")(type "KiCad")(uri "${KIPRJMOD}/lib/LQW15AN47NG00D")(options "")(descr ""))
+  (lib (name "ISO7041")(type "KiCad")(uri "${KIPRJMOD}/lib/ISO7041FQDBQRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "DAC6551")(type "KiCad")(uri "${KIPRJMOD}/lib/DAC6551AQDGKRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV9361QDBVRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
 )

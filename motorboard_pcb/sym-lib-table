@@ -6,4 +6,7 @@
   (lib (name "ISO1640")(type "KiCad")(uri "${KIPRJMOD}/lib/ISO1640BQDRQ1/KiCADv6/2025-02-28_20-22-48.kicad_sym")(options "")(descr ""))
   (lib (name "LM5012")(type "KiCad")(uri "${KIPRJMOD}/lib/LM5012QDDARQ1/KiCADv6/2025-02-28_21-05-36.kicad_sym")(options "")(descr ""))
   (lib (name "LQW15AN47NG00D")(type "KiCad")(uri "${KIPRJMOD}/lib/LQW15AN47NG00D/LQW15AN47NG00D.kicad_sym")(options "")(descr ""))
+  (lib (name "ISO7041")(type "KiCad")(uri "${KIPRJMOD}/lib/ISO7041FQDBQRQ1/KiCADv6/2025-03-02_23-30-03.kicad_sym")(options "")(descr ""))
+  (lib (name "DAC6551")(type "KiCad")(uri "${KIPRJMOD}/lib/DAC6551AQDGKRQ1/KiCADv6/2025-03-02_23-59-54.kicad_sym")(options "")(descr ""))
+  (lib (name "TLV9361")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV9361QDBVRQ1/KiCADv6/2025-03-03_00-17-10.kicad_sym")(options "")(descr ""))
 )

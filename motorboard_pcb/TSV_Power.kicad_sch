@@ -1953,6 +1953,73 @@
 		(uuid "f6af75ac-b712-42a8-8ce9-673755a90f0f")
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 207.01 58.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "043fbb4b-2cff-40a2-8912-720864ec483a")
+		(property "Reference" "R9"
+			(at 204.47 55.372 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.15M"
+			(at 209.042 55.372 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 56.642 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9c367f7a-3c17-4acc-a865-b61590584955")
+		)
+		(pin "1"
+			(uuid "c98dc100-30a3-4143-ad56-a1ca9c563125")
+		)
+		(instances
+			(project "motorboard"
+				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LQW15AN47NG00D:LQW15AN47NG00D")
 		(at 212.09 50.8 0)
 		(unit 1)
@@ -2089,23 +2156,23 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 234.95 67.31 0)
+		(at 234.95 82.55 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "22640f2a-959e-46f3-9685-868e049a0b4c")
-		(property "Reference" "453K"
-			(at 240.03 66.04 0)
+		(uuid "15047efe-b7b6-499d-8c09-d5f6953888b9")
+		(property "Reference" "R11"
+			(at 239.014 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 240.03 68.58 0)
+		(property "Value" "49.9k"
+			(at 239.014 83.566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2113,7 +2180,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.172 67.31 90)
+			(at 236.728 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2122,7 +2189,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 67.31 0)
+			(at 234.95 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2131,7 +2198,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 234.95 67.31 0)
+			(at 234.95 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,15 +2207,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "59fdbf31-29b3-49af-a89a-901302be77d0")
+			(uuid "5af48d64-7382-4210-9dc3-513bb95ea1b8")
 		)
 		(pin "1"
-			(uuid "9e152d05-40e7-452e-b49f-4cf841c1ab91")
+			(uuid "5e54fcb2-bc5c-4b2a-9c6e-493cb4fb465c")
 		)
 		(instances
 			(project "motorboard"
 				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
-					(reference "453K")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -2619,73 +2686,6 @@
 			(project "motorboard"
 				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
 					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 207.01 58.42 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8cbbdf78-f0e7-4e58-af49-0f4f0099d53c")
-		(property "Reference" "1.15M"
-			(at 207.01 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 207.01 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.01 56.642 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 207.01 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 207.01 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "66570285-ed2d-4c57-8ba7-eab6d51f8746")
-		)
-		(pin "1"
-			(uuid "1ba226fa-1acd-4830-906e-69b473f64a51")
-		)
-		(instances
-			(project ""
-				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
-					(reference "1.15M")
 					(unit 1)
 				)
 			)
@@ -3261,23 +3261,23 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 234.95 82.55 0)
+		(at 234.95 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f9905aec-ce74-4cbb-a549-cf4aad6582c2")
-		(property "Reference" "49.9k"
-			(at 240.03 81.28 0)
+		(uuid "fc34632e-bd69-41fe-811d-74db73243c3c")
+		(property "Reference" "R10"
+			(at 239.014 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 240.03 83.82 0)
+		(property "Value" "453k"
+			(at 239.014 68.326 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3285,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.172 82.55 90)
+			(at 236.728 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3294,7 +3294,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 82.55 0)
+			(at 234.95 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3303,7 +3303,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 234.95 82.55 0)
+			(at 234.95 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3312,15 +3312,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "027299b0-464c-49c9-a30b-4d5a91800d10")
+			(uuid "ca143657-e7b1-4cc8-b3ef-6f73fa700843")
 		)
 		(pin "1"
-			(uuid "3e9a6a74-7a06-4cd5-9f15-65ce354d40a2")
+			(uuid "2b3230e8-3373-4805-a6a0-6a1cfc589003")
 		)
 		(instances
 			(project "motorboard"
 				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
-					(reference "49.9k")
+					(reference "R10")
 					(unit 1)
 				)
 			)
