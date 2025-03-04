@@ -9,4 +9,5 @@
   (lib (name "ISO7041")(type "KiCad")(uri "${KIPRJMOD}/lib/ISO7041FQDBQRQ1/KiCADv6/2025-03-02_23-30-03.kicad_sym")(options "")(descr ""))
   (lib (name "DAC6551")(type "KiCad")(uri "${KIPRJMOD}/lib/DAC6551AQDGKRQ1/KiCADv6/2025-03-02_23-59-54.kicad_sym")(options "")(descr ""))
   (lib (name "TLV76701")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV76701DRVR/KiCADv6/2025-03-03_05-34-24.kicad_sym")(options "")(descr ""))
+  (lib (name "TLV9361")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV9361QDBVRQ1/KiCADv6/2025-03-03_05-50-31.kicad_sym")(options "")(descr ""))
 )
