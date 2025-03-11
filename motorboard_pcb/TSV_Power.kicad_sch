@@ -711,6 +711,175 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1705,6 +1874,12 @@
 		(uuid "a91e4a1f-5cc4-4d21-9fc7-6efdb8bf1e8d")
 	)
 	(junction
+		(at 162.56 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa5b806e-0682-43e3-9d4a-0743e4e36662")
+	)
+	(junction
 		(at 134.62 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1763,10 +1938,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd8c101b-02ee-4d69-85cb-9d82c3c778bd")
-	)
-	(no_connect
-		(at 162.56 55.88)
-		(uuid "3cd5f96d-7f0f-4fb7-b525-9a697442fb60")
 	)
 	(wire
 		(pts
@@ -2150,6 +2321,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 58.42) (xy 162.56 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "581fdf71-4944-45d6-993d-b6c53f90fa37")
+	)
+	(wire
+		(pts
 			(xy 88.9 133.35) (xy 92.71 133.35)
 		)
 		(stroke
@@ -2177,6 +2358,16 @@
 			(type default)
 		)
 		(uuid "5ad2ace0-f6d1-4115-a03d-ee28d8a639fb")
+	)
+	(wire
+		(pts
+			(xy 162.56 55.88) (xy 162.56 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aeb3b6f-c82c-4512-b8e9-85791cc46d5c")
 	)
 	(wire
 		(pts
@@ -2580,6 +2771,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 85.09) (xy 162.56 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0e9c659-9124-4d35-8231-552329922f6a")
+	)
+	(wire
+		(pts
 			(xy 194.31 137.16) (xy 195.58 137.16)
 		)
 		(stroke
@@ -2617,6 +2818,16 @@
 			(type default)
 		)
 		(uuid "be071ac9-3e3c-48b8-aec8-21bbbd924478")
+	)
+	(wire
+		(pts
+			(xy 162.56 97.79) (xy 162.56 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf7af7f3-7099-4057-9d34-f57c658e08e1")
 	)
 	(wire
 		(pts
@@ -3006,7 +3217,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 207.01 56.642 90)
 			(effects
 				(font
@@ -3113,6 +3324,76 @@
 			(project "motorboard"
 				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 162.56 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0636c1b7-a3c3-4088-a979-b6a93190b247")
+		(property "Reference" "D2"
+			(at 166.37 81.5974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 166.37 84.1374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 162.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 162.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9ccb67d4-797f-4e61-bc09-4e19d9608138")
+		)
+		(pin "1"
+			(uuid "68924668-b34c-48a2-9393-b39251c08466")
+		)
+		(instances
+			(project ""
+				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3681,6 +3962,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 83.82 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f191616-bc7e-4573-b409-ab3f80f8793a")
+		(property "Reference" "C11"
+			(at 87.63 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 87.63 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+			(at 84.7852 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd725ccb-6220-4f9d-a259-9a9cf41f3497")
+		)
+		(pin "2"
+			(uuid "c08e0cd5-1a36-4f02-9281-526d062b5ea9")
+		)
+		(instances
+			(project "motorboard"
+				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 102.87 127 0)
 		(unit 1)
@@ -3973,7 +4324,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 176.53 53.6448 0)
 			(effects
 				(font
@@ -4110,7 +4461,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 214.3252 72.39 0)
 			(effects
 				(font
@@ -4424,35 +4775,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 205.74 128.27 0)
+		(lib_id "power:GND2")
+		(at 162.56 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "97284688-39ef-4cfc-913a-d3e134b60e34")
-		(property "Reference" "R20"
-			(at 208.28 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "50k"
-			(at 208.28 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 203.962 128.27 90)
+		(uuid "94e3a9b5-a423-4038-835c-d34f0c393ab5")
+		(property "Reference" "#PWR046"
+			(at 162.56 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4460,8 +4793,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 205.74 128.27 0)
+		(property "Value" "GND2"
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4469,8 +4810,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 205.74 128.27 0)
+		(property "Datasheet" ""
+			(at 162.56 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
+			(at 162.56 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4479,15 +4829,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "33faa297-6f35-4070-98c1-37e0dd58c7db")
-		)
-		(pin "2"
-			(uuid "551b7b21-e240-445b-9290-30077a5a3a1f")
+			(uuid "23f22b21-0ec4-4eef-b89a-cbaab0c5a437")
 		)
 		(instances
 			(project "motorboard"
 				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
-					(reference "R20")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -4521,7 +4868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 104.902 63.5 90)
 			(effects
 				(font
@@ -4634,6 +4981,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 162.56 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b189ebd0-1062-4ac4-ac51-36e8baac4668")
+		(property "Reference" "R22"
+			(at 165.1 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "16k"
+			(at 165.1 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 160.782 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 162.56 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19b05d19-976d-4700-9df6-1cc1ad69cf93")
+		)
+		(pin "2"
+			(uuid "b2ab7920-6410-4321-8bfd-1f83b89e3fa2")
+		)
+		(instances
+			(project "motorboard"
+				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 71.12 62.23 0)
 		(unit 1)
@@ -4661,7 +5078,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 72.0852 66.04 0)
 			(effects
 				(font
@@ -4859,7 +5276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 252.4252 74.93 0)
 			(effects
 				(font
@@ -5124,7 +5541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 222.25 57.4548 0)
 			(effects
 				(font
@@ -5390,6 +5807,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 205.74 128.27 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e732ba36-e6fc-4b83-aa8c-684cb453eae8")
+		(property "Reference" "R20"
+			(at 209.804 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "49.9k"
+			(at 209.804 129.286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 207.518 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2c4387ee-f2c3-40d2-86f2-73a707c6c0e3")
+		)
+		(pin "1"
+			(uuid "37990810-af9d-499f-8f08-e16c958c790d")
+		)
+		(instances
+			(project "motorboard"
+				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TLV76701:TLV76701DRVR")
 		(at 151.13 121.92 0)
 		(unit 1)
@@ -5469,76 +5953,6 @@
 			(project "motorboard"
 				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
 					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 83.82 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f198f19a-f7c4-4a17-945a-4db3f8a9d643")
-		(property "Reference" "C11"
-			(at 87.63 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2u"
-			(at 87.63 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 84.7852 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 83.82 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "947e54b1-892d-4e90-8d47-f3b46ab4eb2b")
-		)
-		(pin "2"
-			(uuid "773da855-034f-424f-87a3-306236c36d2d")
-		)
-		(instances
-			(project "motorboard"
-				(path "/fa713205-4357-49d0-ad77-7aa2864b7782/664be53a-ecbc-49c3-915e-4aa63b1c21ee"
-					(reference "C11")
 					(unit 1)
 				)
 			)

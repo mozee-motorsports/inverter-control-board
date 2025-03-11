@@ -10,4 +10,5 @@
   (lib (name "DAC6551")(type "KiCad")(uri "${KIPRJMOD}/lib/DAC6551AQDGKRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "TLV76701")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV76701DRVR/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "TLV9361QDBVRQ1")(type "KiCad")(uri "${KIPRJMOD}/lib/TLV9361QDBVRQ1/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "Logo")(type "KiCad")(uri "${KIPRJMOD}/lib")(options "")(descr ""))
 )
