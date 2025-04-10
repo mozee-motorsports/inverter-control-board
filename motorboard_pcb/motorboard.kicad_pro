@@ -497,10 +497,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "",
+      "plot": "output",
+      "pos_files": "output/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "output/motorboard.step",
       "svg": "",
       "vrml": ""
     },
