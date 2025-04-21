@@ -1,3 +1,6 @@
-# motorboard
+# isolation-expansion-device
 
-firmware in `src/`
+Isolated CAN-addressable analog throttle for Sevcon.
+
+- firmware in `src/`
+- kicad project in `pcb/`
