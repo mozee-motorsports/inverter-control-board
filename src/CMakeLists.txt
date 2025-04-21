@@ -35,7 +35,10 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 add_subdirectory(lib/can2040)
-add_executable(isolation-expansion-device main.cpp )
+add_executable(isolation-expansion-device main.cpp 
+        dac.cpp
+        can.cpp
+        )
 
 pico_set_program_name(isolation-expansion-device "isolation-expansion-device")
 pico_set_program_version(isolation-expansion-device "0.1")
