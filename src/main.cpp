@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "hardware/irq.h"
+#include "can_frame.hpp"
 extern "C" {
     #include "can2040.h"
 }
@@ -34,15 +35,13 @@ static void can2040_cb(struct can2040 *cd, uint32_t notify, struct can2040_msg *
         case CAN2040_NOTIFY_RX: 
             // assume 2 bytes
             gpio_xor_mask(1 << USER_LED);
-            uint16_t adc_taps = (((uint16_t)msg->data[0]) << 8) | (msg->data[1]);
-            double voltage = adc_taps/4096.0 * 5;
-            printf("adc_taps: %d\n", adc_taps);
-            printf("voltage: %lf\n", voltage);
-
-            dac_set_voltage(voltage);
-            // // sample = voltage;
-            // // samplefresh = true;
-            // break;
+            sCAN_Header header = parse_id(msg->id);
+            if(header.direction == TO && header.module == ISOLATION_EXPANSION_DEVICE) {
+                uint16_t adc_taps = (((uint16_t)msg->data[0]) << 8) | (msg->data[1]);
+                double voltage = adc_taps/4096.0 * 5;
+                sample = voltage;
+                samplefresh = true;
+            }
     }
 }
 
@@ -128,12 +127,9 @@ int main() {
     gpio_put(USER_LED, 1);
 
     while (true) {
-        // if(samplefresh) {
-
-            // gpio_put(USER_LED, 0);
-            // samplefresh = false;
-            // sleep_ms(1000);
-            // gpio_put(USER_LED, 1);
-        // }
+        if (samplefresh) {
+            dac_set_voltage(sample);
+            samplefresh = false;
+        }
     }
 }
