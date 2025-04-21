@@ -4,7 +4,6 @@ add_library(can2040
 )
 
 target_link_libraries(can2040
-    pico_stdlib
     hardware_resets
     cmsis_core
 )

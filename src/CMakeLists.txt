@@ -28,37 +28,39 @@ set(PICO_BOARD pico2 CACHE STRING "Board type")
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(emotor-throttle C CXX ASM)
+project(isolation-expansion-device C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
+add_subdirectory(lib/can2040)
+add_executable(isolation-expansion-device main.cpp )
 
-add_executable(emotor-throttle emotor-throttle.c )
-
-pico_set_program_name(emotor-throttle "emotor-throttle")
-pico_set_program_version(emotor-throttle "0.1")
+pico_set_program_name(isolation-expansion-device "isolation-expansion-device")
+pico_set_program_version(isolation-expansion-device "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(emotor-throttle 0)
-pico_enable_stdio_usb(emotor-throttle 1)
+pico_enable_stdio_uart(isolation-expansion-device 0)
+pico_enable_stdio_usb(isolation-expansion-device 1)
 
-add_subdirectory(can2040)
 # Add the standard library to the build
-target_link_libraries(emotor-throttle
+target_link_libraries(
+        isolation-expansion-device
+        hardware_spi
+        pico_stdlib
         can2040
-        pico_stdlib)
+        )
 
 # Add the standard include files to the build
-target_include_directories(emotor-throttle PRIVATE
+target_include_directories(isolation-expansion-device PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
-target_link_libraries(emotor-throttle 
+target_link_libraries(isolation-expansion-device 
         hardware_spi
         )
 
-pico_add_extra_outputs(emotor-throttle)
+pico_add_extra_outputs(isolation-expansion-device)
 

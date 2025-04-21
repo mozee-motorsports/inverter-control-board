@@ -1,1 +1,3 @@
 # motorboard
+
+firmware in `src/`

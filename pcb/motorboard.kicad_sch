@@ -4824,7 +4824,7 @@
 		)
 		(uuid bf3994b3-e871-44f2-a34c-cf3009e1d17e)
 	)
-	(text "Vout = 3.06 (3.3) = 10.01 V\n"
+	(text "Vout = 1.515 (3.3) = 5 V\n"
 		(exclude_from_sim no)
 		(at 171.196 137.922 0)
 		(effects
@@ -4844,7 +4844,7 @@
 		)
 		(uuid "b34132dc-3c05-4ee5-851f-226ddebb00d9")
 	)
-	(text "Vout = Vin (1 + Rf/R2) = Vin (1+2.06) = 3.06 Vin"
+	(text "Vout = Vin (1 + Rf/R2) = Vin (1+0.515) = 1.515*Vin\n"
 		(exclude_from_sim no)
 		(at 182.372 134.366 0)
 		(effects

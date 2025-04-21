@@ -23,6 +23,11 @@
 #define I2C_SCL 9
 
 
+// #define CAN_TX 3
+// #define CAN_RX 4
+#define CAN_TX 27
+#define CAN_RX 26
+
 // CAN2040 defines
 static struct can2040 cbus;
 static struct can2040_msg msg;
@@ -47,8 +52,8 @@ static void PIOx_IRQHandler(void) {
 void canbus_setup(void) {
     uint32_t pio_num = 0;
     uint32_t sys_clock = 125000000, bitrate = 1000000;
-    uint32_t gpio_tx = 27;
-    uint32_t gpio_rx = 26;
+    uint32_t gpio_tx = CAN_TX;
+    uint32_t gpio_rx = CAN_RX;
 
     // Setup canbus
     can2040_setup(&cbus, pio_num);
@@ -69,19 +74,29 @@ int main() {
     canbus_setup();
     sleep_ms(5000);
 
-    uint8_t LED_STATE = 0;
-
     int toggle = 0;
     while (true) {
-        printf("Enter 1 or 0 To Turn LED ON or OFF:\n");
-        scanf("%d", &LED_STATE);
-        gpio_put(0, LED_STATE);
-        sleep_ms(100);
+
+        // int number;
+        // printf("Enter a number: ");
+        // scanf("%d", &number);  // %d format specifier for integers
+        // printf("You entered the number: %d\n", number);
+        uint16_t adc_taps = 2047;
+        msg.id = 1;
+        msg.dlc = 2;
+        msg.data[0] = adc_taps >> 8;
+        msg.data[1] = adc_taps & 0xFF;
+
+        int success = can2040_transmit(&cbus, &msg);
+        sleep_ms(5000);
 
         msg.id = 1;
-        msg.dlc = 1;
-        msg.data[0] = LED_STATE;
-        int success = can2040_transmit(&cbus, &msg);
-        printf("can2040_transmit(%d) -> %d\n", LED_STATE, success);
+        msg.dlc = 2;
+        msg.data[0] = 0;
+        msg.data[1] = 0;
+
+        can2040_transmit(&cbus, &msg);
+        sleep_ms(5000);
+        // printf("can2040_transmit(%d) -> %d\n", adc_taps, success);
     }
 }
