@@ -1,4 +1,4 @@
-# isolation-expansion-device
+# mp7_ied (isolation-expansion-device)
 
 Isolated CAN-addressable analog throttle for Sevcon.
 
